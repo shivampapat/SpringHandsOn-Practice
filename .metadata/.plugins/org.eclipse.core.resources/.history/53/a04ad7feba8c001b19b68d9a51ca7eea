@@ -1,0 +1,18 @@
+package com.shivam.springdemo;
+
+public class MyApp {
+
+	public static void main(String[] args) {
+
+		//Create object
+		Coach bobj = new BaseballCoach();
+		Coach tobj = new TrackCoach();
+		Coach cobj = new CodingCoach();
+		
+		//Get workout
+		System.out.println(bobj.getDailyWorkout());
+		System.out.println(tobj.getDailyWorkout());
+		System.out.println(cobj.getDailyWorkout());
+	}
+
+}
