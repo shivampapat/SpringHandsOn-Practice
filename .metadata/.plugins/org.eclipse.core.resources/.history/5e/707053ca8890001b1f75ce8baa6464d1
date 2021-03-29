@@ -1,0 +1,17 @@
+package com.shivam.springdemo;
+
+public class TrackCoach implements Coach {
+
+	//DI
+	private FortuneService fortuneService;
+	
+	@Override
+	public String getDailyWorkout() {
+		return "Run for 5 kilometers";
+	}
+	
+	@Override
+	public String getDailyFortune() {
+		return "";
+	}
+}

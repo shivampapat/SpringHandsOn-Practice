@@ -1,0 +1,23 @@
+package com.shivam.springdemo;
+
+public class TrackCoach implements Coach {
+
+	//DI
+	private FortuneService fortuneService;
+	
+	//Constructor for FortuneService (Dependency injection)
+	public TrackCoach(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
+	
+	
+	@Override
+	public String getDailyWorkout() {
+		return "Run for 5 kilometers";
+	}
+	
+	@Override
+	public String getDailyFortune() {
+		return fortuneService.getFortune();
+	}
+}

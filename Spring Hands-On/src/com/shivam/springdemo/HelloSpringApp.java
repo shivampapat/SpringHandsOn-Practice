@@ -20,6 +20,12 @@ public class HelloSpringApp {
 		System.out.println(coach.getDailyWorkout());
 		System.out.println(coach2.getDailyWorkout());
 		
+		//Calling new fortune methods
+		System.out.println(coach.getDailyFortune());
+		System.out.println(coach2.getDailyFortune());
+		
+		
+		
 		//Close the context
 		context.close();
 	}
