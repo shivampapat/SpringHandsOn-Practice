@@ -8,10 +8,12 @@ public class BaseballCoach implements Coach{
 	//Constructor for FortuneService (Dependency injection)
 	public BaseballCoach(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
+		System.out.println("Constructor injection used in baseball");
 	}
 	
 	//Constructor wo arguments 
 	public BaseballCoach() {
+		System.out.println("I am Baseball Coach");
 	}
 
 	

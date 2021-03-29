@@ -38,6 +38,18 @@
     </bean>
     
     
+    <bean
+   		id= "myCoach3"
+   		class = "com.shivam.springdemo.CodingCoach"	
+    >
+    	<!-- Set up setter injection (method name should be "set"+name i.e. setFortuneService)-->
+	  		<property
+	  			name="fortuneService" 
+	  			ref = "myFortune"
+	  		/>	
+    </bean>
+    
+    
 </beans>
 
 

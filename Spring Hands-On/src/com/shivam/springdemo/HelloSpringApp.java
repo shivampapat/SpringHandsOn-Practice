@@ -15,14 +15,18 @@ public class HelloSpringApp {
 		//mycoach is ID of bean and it is an object of a class who implemented Coach , thus Coach.class
 		Coach coach = context.getBean("myCoach", Coach.class);
 		Coach coach2 = context.getBean("myCoach2", Coach.class);
+		Coach coach3 = context.getBean("myCoach3", Coach.class);
+		
 		
 		//Use the bean
 		System.out.println(coach.getDailyWorkout());
 		System.out.println(coach2.getDailyWorkout());
+		System.out.println(coach3.getDailyWorkout());
 		
 		//Calling new fortune methods
 		System.out.println(coach.getDailyFortune());
 		System.out.println(coach2.getDailyFortune());
+		System.out.println(coach3.getDailyFortune());
 		
 		
 		

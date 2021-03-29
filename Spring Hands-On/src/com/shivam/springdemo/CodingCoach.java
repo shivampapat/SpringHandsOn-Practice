@@ -5,14 +5,18 @@ public class CodingCoach implements Coach {
 	//DI
 	private FortuneService fortuneService;
 	
-	//Constructor for FortuneService (Dependency injection)
-	public CodingCoach(FortuneService fortuneService) {
-		this.fortuneService = fortuneService;
+	
+	//Constructor without arguments 
+	public CodingCoach() {
+		System.out.println("I am Coding Coach");
 	}
 	
-	//Constructor wo arguments 
-	public CodingCoach() {
+	//Constructor for FortuneService (Dependency injection)
+	public void setFortuneService(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+		System.out.println("Setter injection used in coding");
 	}
+	
 
 	@Override
 	public String getDailyWorkout() {

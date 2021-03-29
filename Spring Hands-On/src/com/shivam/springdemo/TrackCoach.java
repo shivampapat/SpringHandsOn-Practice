@@ -8,10 +8,12 @@ public class TrackCoach implements Coach {
 	//Constructor for FortuneService (Dependency injection)
 	public TrackCoach(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
+		System.out.println("Constructor injection used in tracking");
 	}
 	
 	//Constructor wo arguments 
 	public TrackCoach() {
+		System.out.println("I am Track Coach");
 	}
 	
 	
