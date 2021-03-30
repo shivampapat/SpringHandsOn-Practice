@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Injecting values through properties file -->
+	<context:property-placeholder location = "classpath:application.properties"/>
+
+	<!-- Define beans here-->
+	
+	<!-- Define the dependency-->
+    
+    <bean
+    	id= "myFortune"
+   		class = "com.shivam.springdemo.HappyFortuneService"	
+    />
+    
+
+	<!-- Bean scope either singleton orr prototype (default is singleton) -->
+    
+    <bean
+   		id= "myCoach"
+   		class = "com.shivam.springdemo.TrackCoach"
+   		init-method="StartingStuff"
+   		destroy-method="ClosingStuff"
+   	>
+  		<!-- Set up constructor injection-->
+	  		<constructor-arg ref = "myFortune"/>			
+    </bean>
+ 
+    
+    
+</beans>
+
+
+
+
+

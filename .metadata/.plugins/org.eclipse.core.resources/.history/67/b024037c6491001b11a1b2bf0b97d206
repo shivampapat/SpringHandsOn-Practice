@@ -31,10 +31,6 @@ public class TrackCoach implements Coach {
 	
 	//Init and Destroy method
 	public void StartingStuff() {
-		System.out.println("Inside init method of trackCoach");
-	}
-	
-	public void CleaningStuff() {
-		System.out.println("Inside destroy method of trackCoach");
+		System.out.println("Inside init merhod of trackCoach");
 	}
 }

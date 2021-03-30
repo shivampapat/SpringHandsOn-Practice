@@ -1,0 +1,23 @@
+package com.shivam.springdemo;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class BeanLifeCycleMainApp {
+
+	public static void main(String[] args) {
+
+		//Step 1- Created Xml file for configuring bean
+		
+		//Step 2- Load Spring Config file
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("BeanLifeCycle-applicationContext.xml");
+		
+		//Step 3- Retrieve bean from container
+		Coach coach = context.getBean("myCoach", Coach.class);
+		
+		System.out.println(coach.getDailyWorkout());
+		
+		//Close the context
+		context.close();
+	}
+
+}

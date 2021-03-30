@@ -28,13 +28,4 @@ public class TrackCoach implements Coach {
 		//Use the object to get fortune() from happy fortune
 		return "Track coach says : "+ fortuneService.getFortune();
 	}
-	
-	//Init and Destroy method
-	public void StartingStuff() {
-		System.out.println("Inside init method of trackCoach");
-	}
-	
-	public void CleaningStuff() {
-		System.out.println("Inside destroy method of trackCoach");
-	}
 }
