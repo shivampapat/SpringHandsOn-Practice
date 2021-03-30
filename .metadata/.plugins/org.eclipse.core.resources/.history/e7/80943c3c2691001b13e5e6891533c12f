@@ -34,7 +34,6 @@ public class CodingCoach implements Coach {
 
 	//Constructor without arguments 
 	public CodingCoach() {
-		System.out.println();
 		System.out.println("I am Coding Coach");
 	}
 	

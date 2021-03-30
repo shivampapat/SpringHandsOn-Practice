@@ -7,9 +7,6 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<!-- Injecting values through properties file -->
-	<context:property-placeholder location = "classpath:application.properties"/>
-
 	<!-- Define beans here-->
 	
 	<!-- Define the dependency-->
@@ -62,19 +59,6 @@
 	  	<!--  Injecting literal values for characteristics -->
 	  		<property name="emailAddress" value="shivampapat@gmail.com"></property>
 	  		<property name="teamName" value="Indian Legends"></property>
-	  		
-    </bean>
-    
-    <bean
-   		id= "myCoach5"
-   		class = "com.shivam.springdemo.CodingCoach"	
-    >
-    	<!-- Set up setter injection (method name should be "set"+name i.e. setFortuneService)-->
-	  		<property name="fortuneService" ref = "myFortune"/>
-	  			
-	  	<!--  Injecting literal values for characteristics through properties file -->
-	  		<property name="emailAddress" value="${code.email}"></property>
-	  		<property name="teamName" value="${code.team}"></property>
 	  		
     </bean>
     

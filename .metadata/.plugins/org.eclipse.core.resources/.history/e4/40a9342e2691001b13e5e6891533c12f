@@ -15,12 +15,16 @@ public class HelloSpringApp {
 		//mycoach is ID of bean and it is an object of a class who implemented Coach , thus Coach.class
 		Coach coach = context.getBean("myCoach", Coach.class);
 		Coach coach2 = context.getBean("myCoach2", Coach.class);
+		
+		System.out.println();
 		Coach coach3 = context.getBean("myCoach3", Coach.class);
+		System.out.println();
 		
 		//(as email add and team is not in coach interface)
 		CodingCoach coach4 = context.getBean("myCoach4", CodingCoach.class);
-		CodingCoach coach5 = context.getBean("myCoach5", CodingCoach.class);
+		System.out.println();
 		
+		CodingCoach coach5 = context.getBean("myCoach5", CodingCoach.class);
 		System.out.println();
 		
 		//Use the bean
@@ -29,21 +33,22 @@ public class HelloSpringApp {
 		System.out.println(coach3.getDailyWorkout());
 		System.out.println(coach4.getDailyWorkout());
 		System.out.println(coach5.getDailyWorkout());
-		System.out.println();
 		
+		System.out.println();
 		//Calling new fortune methods
 		System.out.println(coach.getDailyFortune());
 		System.out.println(coach2.getDailyFortune());
 		System.out.println(coach3.getDailyFortune());
 		System.out.println(coach4.getDailyFortune());
 		System.out.println(coach5.getDailyFortune());
-		System.out.println();
 		
+		
+		System.out.println();
 		//Methods of Coding class 
 		System.out.println("Email address is " +coach4.getEmailAddress());
 		System.out.println("Team name is "+ coach4.getTeamName());
-		System.out.println();
 		
+		System.out.println();
 		//Methods of Coding class  
 		System.out.println("Email address is " +coach5.getEmailAddress());
 		System.out.println("Team name is "+ coach5.getTeamName());

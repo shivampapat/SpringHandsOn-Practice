@@ -65,19 +65,6 @@
 	  		
     </bean>
     
-    <bean
-   		id= "myCoach5"
-   		class = "com.shivam.springdemo.CodingCoach"	
-    >
-    	<!-- Set up setter injection (method name should be "set"+name i.e. setFortuneService)-->
-	  		<property name="fortuneService" ref = "myFortune"/>
-	  			
-	  	<!--  Injecting literal values for characteristics through properties file -->
-	  		<property name="emailAddress" value="${code.email}"></property>
-	  		<property name="teamName" value="${code.team}"></property>
-	  		
-    </bean>
-    
 </beans>
 
 

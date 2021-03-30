@@ -21,8 +21,6 @@ public class HelloSpringApp {
 		CodingCoach coach4 = context.getBean("myCoach4", CodingCoach.class);
 		CodingCoach coach5 = context.getBean("myCoach5", CodingCoach.class);
 		
-		System.out.println();
-		
 		//Use the bean
 		System.out.println(coach.getDailyWorkout());
 		System.out.println(coach2.getDailyWorkout());
