@@ -2,10 +2,36 @@ package com.shivam.springdemo;
 
 public class CodingCoach implements Coach {
 
+	//Characteristics of CodingClass
+	//Created for injecting literal values to a class
+	private String emailAddress;
+	private String teamName;
+	
+	//Setters and Getters
+
+	public void setEmailAddress(String emailAddress) {
+		System.out.println("CodingCoach : Inside setEmailAddress");
+		this.emailAddress = emailAddress;
+	}
+	
+	public String getEmailAddress() {
+		return emailAddress;
+	}
+
+	public void setTeamName(String teamName) {
+		System.out.println("CodingCoach : Inside setTeamName");
+		this.teamName = teamName;
+	}
+	
+	public String getTeamName() {
+		return teamName;
+	}
+	
+	
 	//DI
 	private FortuneService fortuneService;
 	
-	
+
 	//Constructor without arguments 
 	public CodingCoach() {
 		System.out.println("I am Coding Coach");
