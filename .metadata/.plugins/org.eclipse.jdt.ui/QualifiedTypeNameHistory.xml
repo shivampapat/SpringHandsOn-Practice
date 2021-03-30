@@ -3,4 +3,5 @@
     <fullyQualifiedTypeName name="com.shivam.springdemo.BaseballCoach"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="com.shivam.springdemo.FortuneService"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 </qualifiedTypeNameHistroy>
