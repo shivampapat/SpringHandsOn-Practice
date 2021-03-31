@@ -2,8 +2,8 @@ package com.shivam.springannotation;
 
 import org.springframework.stereotype.Component;
 
-//Step1.2 (Registering component in Java class)
-@Component("myCoach")
+//Step1.2 Default Bean ID (class name with first character lowercase)
+@Component
 public class TennisCoach implements Coach {
 
 	@Override
