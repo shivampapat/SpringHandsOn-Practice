@@ -22,6 +22,11 @@ public class AnnotationMainApp {
 		System.out.println(coach.hashCode());
 		System.out.println(coach2.hashCode());
 		
+		System.out.println();
+		
+		//Calling ortune methods after constructor injection
+		System.out.println(coach.getDailyFortune());
+		
 		//Close the container context
 		context.close();
 	}
