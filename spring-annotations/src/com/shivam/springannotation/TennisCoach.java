@@ -2,10 +2,12 @@ package com.shivam.springannotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 //Step1.2 Default Bean ID (class name with first character lowercase)
 @Component
+@Scope("prototype") // By default is singleton means same obj for each ref 
 public class TennisCoach implements Coach {
 
 	//Field Injection
