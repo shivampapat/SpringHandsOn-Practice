@@ -22,11 +22,19 @@ public class TennisCoach implements Coach {
 		System.out.println("Inside default constructor of tennis coach");
 	}
 	
+	/*
 	//Create setter method for injection
 	@Autowired
 	public void setFortuneService(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 		System.out.println("Inside setter function of tennis coach");
+	}
+	
+	*/
+	@Autowired
+	public void anyMethod(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+		System.out.println("Inside any function  of tennis coach");
 	}
 	
 	@Override

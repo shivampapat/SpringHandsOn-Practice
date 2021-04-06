@@ -1,5 +1,0 @@
-package com.shivam.springdemo;
-
-public interface FortuneService {
-
-}
