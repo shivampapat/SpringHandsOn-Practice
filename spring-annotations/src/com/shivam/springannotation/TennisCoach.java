@@ -1,6 +1,7 @@
 package com.shivam.springannotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 //Step1.2 Default Bean ID (class name with first character lowercase)
@@ -9,6 +10,9 @@ public class TennisCoach implements Coach {
 
 	//Field Injection
 	@Autowired
+	//When there are multiple implementation of Forutne Service, we tell Spring which one to select specifically
+	//Default bean name of randomFortServ
+	@Qualifier("randomFortuneService")
 	private FortuneService fortuneService;
 	
 	/*
